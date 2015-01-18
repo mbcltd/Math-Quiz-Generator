@@ -42,7 +42,7 @@ object MainLatex extends App {
 
   def toLatexTable(l:List[(String,Int)]) = l.map( toLatexTableElement ).mkString(" & ") + " \\\\ \\hline"
 
-  def toLatexTableElement(t:(String,Int)) = "" + t._2 +". & " + t._1 +" & "
+  def toLatexTableElement(t:(String,Int)) = "" + ( t._2 +1 ) +". & " + t._1 +" & "
 
   println(header)
   println(content)
